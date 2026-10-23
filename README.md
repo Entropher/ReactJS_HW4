@@ -10,6 +10,7 @@ The app simulates a basic online shopping experience with:
 - Product detail pages
 - Cart quantity controls and removal
 - User profile data from a fake user endpoint
+- User registration form with Yup validation and React Hook Form
 - Responsive layout and reusable UI components
 - Dynamic fetching from a public API
 
@@ -33,7 +34,6 @@ src/
 │   ├── cart/
 │   │   └── page.js
 │   ├── products/
-│   │   ├── page.js
 │   │   └── details/
 │   │       └── [id]/
 │   │           └── page.js
@@ -51,11 +51,15 @@ src/
 
 ## Main Routes
 
-- `/` - storefront home page
-- `/products` - product catalog
+- `/` - product catalog and storefront home page
 - `/products/details/[id]` - individual product detail page
 - `/cart` - shopping cart view
 - `/profile` - user profile page
+- `/register` - registration form, submitted to JSONPlaceholder's mock users endpoint
+
+The registration form validates all fields locally. For safety, it does not send
+the password to the public mock endpoint; JSONPlaceholder does not persist
+submitted user data.
 
 ## API
 

@@ -4,9 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   House,
-  PanelsTopLeft,
-  Package,
-  Settings,
   ShoppingCart,
   UserRound,
   UserRoundPlus,
@@ -15,13 +12,9 @@ import styles from "./Navbar.module.css";
 
 const icons = {
   home: House,
-  dashboard: PanelsTopLeft,
-  segments: UserRoundPlus,
-  account: UserRound,
-  settings: Settings,
-  products: Package,
   profile: UserRound,
   cart: ShoppingCart,
+  register: UserRoundPlus,
 };
 
 const Navbar = ({ data }) => {

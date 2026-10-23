@@ -20,13 +20,9 @@ export const metadata = {
 
 const navbarItems = [
   { id: 1, name: "Home", url: "/", icon: "home" },
-  { id: 2, name: "Dashboards", url: "/dashboards", icon: "dashboard" },
-  { id: 3, name: "Segments", url: "/segments", icon: "segments" },
-  { id: 4, name: "Account", url: "/account", icon: "account" },
-  { id: 5, name: "Settings", url: "/settings", icon: "settings" },
-  { id: 6, name: "Products", url: "/products", icon: "products" },
-  { id: 7, name: "Profile", url: "/profile", icon: "profile" },
-  { id: 8, name: "Cart", url: "/cart", icon: "cart" },
+  { id: 2, name: "Profile", url: "/profile", icon: "profile" },
+  { id: 3, name: "Cart", url: "/cart", icon: "cart" },
+  { id: 4, name: "Login", url: "/register", icon: "register" },
 ];
 const footerItems = [
   { id: 1, name: "Conditions of Use", url: "/conditions-of-use" },

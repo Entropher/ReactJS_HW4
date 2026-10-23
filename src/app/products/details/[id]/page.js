@@ -21,7 +21,7 @@ export default async function ProductDetailsPage({ params }) {
   if (!response?.ok) {
     return (
       <main className={styles.page}>
-        <Link className={styles.backLink} href="/products">
+        <Link className={styles.backLink} href="/">
           ← ყველა პროდუქტი
         </Link>
         <p className={styles.description} role="alert">
@@ -39,7 +39,7 @@ export default async function ProductDetailsPage({ params }) {
 
   return (
     <main className={styles.page}>
-      <Link className={styles.backLink} href="/products">
+      <Link className={styles.backLink} href="/">
         ← ყველა პროდუქტი
       </Link>
       <article className={styles.product}>
